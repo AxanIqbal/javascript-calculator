@@ -5,7 +5,8 @@ const styles = (theme) => ({
     buttonW: {
         "width": "95%",
         "margin-bottom": "0.1rem",
-        "height": "95%"
+        "height": "95%",
+        "min-width": 0,
     },
 });
 

@@ -20,7 +20,9 @@ const useStyles = makeStyles((Theme) => ({
         "width": "100%",
     },
     divMain: {
-        "max-width": "20rem",
+        "max-width": "30vw",
+        "min-width": "-webkit-fill-available",
+        "min-width": "-moz-available",
     },
 }))
 
@@ -73,8 +75,8 @@ function App() {
         <Container>
             <Card variant={"outlined"}>
                 <CardHeader title={"Calculator"}/>
-                <CardContent>
-                    <Grid container className={classes.divMain}>
+                <CardContent className={classes.divMain}>
+                    <Grid container >
                         <Grid item xs={12} style={{paddingBottom: "1rem"}}>
                             <TextField id={"display"} variant={"outlined"} disabled value={isValue} className={classes.textShow}/>
                         </Grid>
